@@ -1,0 +1,17 @@
+ --protected-mode no
+ 
+ 
+ src/redis-server   --protected-mode no  
+ 提示
+ 2122:C 29 Jun 16:14:38.203 # Warning: no config file specified, using the default config. In order to specify a config file use src/redis-server /path/to/redis.conf
+ 
+ 
+ 必须制定redis.conf   才行， 即使 redis.conf   就在当前目录下。。
+ src/redis-server    redis.conf  
+ 
+ 
+ 
+ 
+ Filter是过滤器，interceptor是拦截器。前者基于回调函数实现，必须依靠容器支持
+ 
+ 
